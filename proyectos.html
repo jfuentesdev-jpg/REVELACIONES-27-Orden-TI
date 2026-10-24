@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyectos · ◈ REVELACIONES 27 · Orden TI</title>
+  <meta name="description" content="Panel de proyectos de ◈ REVELACIONES 27 · Orden TI. El grupo inicia: aquí se publicarán solo proyectos con evidencia verificable." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>" />
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="contenedor barra">
+      <a href="index.html" class="logo">
+        <span class="logo-icono">◈</span> REVELACIONES<span class="logo-apagado">27</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-enlaces" id="navEnlaces">
+        <a href="index.html">Inicio</a>
+        <a href="areas.html">Áreas</a>
+        <a href="proyectos.html" class="activo">Proyectos</a>
+        <a href="comunidad.html">Comunidad</a>
+      </nav>
+    </div>
+  </header>
+
+  <canvas id="red" class="fondo-particulas" aria-hidden="true"></canvas>
+
+  <!-- ================= CABECERA ================= -->
+  <section class="cabecera-pagina">
+    <div class="contenedor">
+      <p class="ruta">◈ REVELACIONES 27 &gt; <span class="texto-neon">Proyectos</span></p>
+      <h1 class="titulo-seccion">Panel <span class="texto-neon">en preparación</span></h1>
+      <p class="subtitulo-seccion">El grupo recién arranca. Todavía no hay proyectos en equipo, y eso se dice claro: aquí solo se publicará lo que exista y pueda comprobarse.</p>
+    </div>
+  </section>
+
+  <!-- ================= ESTADO VACÍO ================= -->
+  <section class="seccion" style="padding-top: 0;">
+    <div class="contenedor">
+      <div class="terminal reveal">
+        <div class="terminal-barra" aria-hidden="true"><span></span><span></span><span></span></div>
+        <p><span class="t-verde">$</span> <span class="t-cian">proyectos.listar</span> --equipo "REVELACIONES 27"</p>
+        <p class="t-gris">&gt; [ ] 0 procesos activos</p>
+        <p class="t-gris">&gt; buffer: vacio... el primer entregable se está incubando</p>
+        <p><span class="t-verde">&gt;</span> regla de la Orden: no fake, no presumir — se publica solo evidencia verificable</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= QUÉ APARECERÁ AQUÍ ================= -->
+  <section class="seccion seccion-alt">
+    <div class="contenedor">
+      <h2 class="titulo-seccion"><span class="texto-neon">&gt;_</span> Qué aparecerá aquí</h2>
+      <p class="subtitulo-seccion">Las reglas del panel están listas; el contenido se forjará con el tiempo.</p>
+      <div class="grid-areas">
+        <article class="tarjeta tarjeta-invertida reveal">
+          <span class="tarjeta-icono">🎓</span>
+          <h3>Práctica individual</h3>
+          <p>Código, capturas y ejercicios de lo que se practica sesión a sesión.</p>
+          <span class="estado proximo">● Pendiente</span>
+        </article>
+        <article class="tarjeta tarjeta-invertida reveal">
+          <span class="tarjeta-icono">🤝</span>
+          <h3>Proyectos colaborativos</h3>
+          <p>El primer proyecto en equipo se elegirá junto entre los integrantes.</p>
+          <span class="estado proximo">● Pendiente</span>
+        </article>
+        <article class="tarjeta tarjeta-invertida reveal">
+          <span class="tarjeta-icono">📊</span>
+          <h3>Estado en vivo</h3>
+          <p>Cada proyecto con su indicador: en desarrollo, operativo o entregado.</p>
+          <span class="estado proximo">● Pendiente</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CIERRE ================= -->
+  <section class="seccion seccion-caja">
+    <div class="contenedor caja-final reveal">
+      <p class="caja-codigo">$ git init "primer-proyecto-colaborativo"</p>
+      <h2>Este panel se encenderá con la primera evidencia</h2>
+      <p>Mientras tanto, el avance está donde debe estar: en las áreas cubiertas y en la práctica diaria de cada integrante.</p>
+      <a href="areas.html" class="btn btn-secundario">Ver las áreas cubiertas →</a>
+      <p class="caja-nota">&gt;_ Lo que se anuncia sin construir, no cuenta. Aquí se exhibe lo terminado.</p>
+    </div>
+  </section>
+
+  <footer class="pie">
+    <div class="contenedor pie-contenido">
+      <p class="pie-logo"><span class="logo-icono">◈</span> REVELACIONES <span class="texto-neon">27</span> · Orden <span class="texto-neon">TI</span></p>
+      <nav class="pie-nav">
+        <a href="index.html">Inicio</a>
+        <a href="areas.html">Áreas</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="comunidad.html">Comunidad</a>
+      </nav>
+      <p class="pie-frase">"La tecnología avanza y nosotros avanzamos con ella."</p>
+      <p class="pie-anio">© <span id="anio"></span> — ◈ REVELACIONES 27 · Orden TI</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

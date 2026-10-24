@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>◈ REVELACIONES 27 · Orden TI — Comunidad exclusiva de Tecnología</title>
+  <meta name="description" content="◈ REVELACIONES 27 · Orden TI: comunidad exclusiva de tecnología. 12 áreas: TI, mantenimiento de equipos, redes, programación, datos, web, ética y pensamiento crítico. La tecnología avanza y nosotros avanzamos con ella." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>" />
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+
+  <!-- ================= BARRA DE NAVEGACIÓN ================= -->
+  <header class="navbar">
+    <div class="contenedor barra">
+      <a href="index.html" class="logo">
+        <span class="logo-icono">◈</span> REVELACIONES<span class="logo-apagado">27</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-enlaces" id="navEnlaces">
+        <a href="index.html" class="activo">Inicio</a>
+        <a href="areas.html">Áreas</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="comunidad.html">Comunidad</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= FONDO DE PARTÍCULAS ================= -->
+  <canvas id="red" class="fondo-particulas" aria-hidden="true"></canvas>
+
+  <!-- ================= PORTADA ================= -->
+  <section class="hero">
+    <div class="contenedor hero-contenido">
+      <p class="hero-etiqueta">// Comunidad exclusiva de tecnología</p>
+      <h1 class="hero-titulo glitch" data-texto="REVELACIONES 27">
+        REVELACIONES <span class="texto-neon">27</span>
+      </h1>
+      <p class="hero-subtitulo">
+        <span class="texto-apagado">&gt;_</span> <span id="typing" class="texto-neon"></span><span class="cursor">▌</span>
+      </p>
+      <p class="hero-frase">"La tecnología avanza y nosotros avanzamos con ella."</p>
+      <div class="hero-botones">
+        <a href="comunidad.html" class="btn btn-primario">✦ Conoce la orden</a>
+        <a href="#areas" class="btn btn-secundario">Ver las áreas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CIFRAS ================= -->
+  <section class="cifras">
+    <div class="contenedor cifras-grid">
+      <div class="cifra">
+        <span class="cifra-numero" data-max="100" data-sufijo="%">0</span>
+        <span class="etiqueta">Ganas de aprender</span>
+      </div>
+      <div class="cifra">
+        <span class="cifra-numero" data-max="24" data-sufijo="/7">0</span>
+        <span class="etiqueta">Comunidad activa</span>
+      </div>
+      <div class="cifra">
+        <span class="cifra-numero" data-max="6" data-sufijo="">0</span>
+        <span class="etiqueta">Áreas de estudio</span>
+      </div>
+      <div class="cifra">
+        <span class="cifra-numero" data-max="365" data-sufijo="+">0</span>
+        <span class="etiqueta">Días avanzando</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ÁREAS (RESUMEN) ================= -->
+  <section id="areas" class="seccion">
+    <div class="contenedor">
+      <h2 class="titulo-seccion"><span class="texto-neon">&gt;_</span> Áreas cubiertas</h2>
+      <p class="subtitulo-seccion">Doce áreas de estudio ordenadas en tres bloques: base, técnica y aplicación. Así se forma la Orden.</p>
+      <div class="grid-areas">
+        <a class="tarjeta reveal" href="areas.html">
+          <span class="tarjeta-icono">🔗</span>
+          <h3>Integración de las TI</h3>
+          <p>Cómo se conectan hardware, software, redes y datos para resolver necesidades reales.</p>
+          <span class="tarjeta-cta">Ver las 12 áreas →</span>
+        </a>
+        <a class="tarjeta reveal" href="areas.html">
+          <span class="tarjeta-icono">🛠️</span>
+          <h3>Mantenimiento y reparación de equipos de cómputo</h3>
+          <p>Diagnóstico, montaje y reparación: del componente al equipo funcionando.</p>
+          <span class="tarjeta-cta">Ver las 12 áreas →</span>
+        </a>
+        <a class="tarjeta reveal" href="areas.html">
+          <span class="tarjeta-icono">💻</span>
+          <h3>Lógica de programación</h3>
+          <p>Variables, condicionales, ciclos y funciones: pensar antes de teclear.</p>
+          <span class="tarjeta-cta">Ver las 12 áreas →</span>
+        </a>
+        <a class="tarjeta reveal" href="areas.html">
+          <span class="tarjeta-icono">🕸️</span>
+          <h3>Desarrollo de entornos web</h3>
+          <p>HTML, CSS y JavaScript: sitios que funcionan desde cero, como este.</p>
+          <span class="tarjeta-cta">Ver las 12 áreas →</span>
+        </a>
+      </div>
+      <p class="centrar-link"><a class="enlace-neon" href="areas.html">&gt;&gt; Ver las 12 áreas cubiertas</a></p>
+    </div>
+  </section>
+
+  <!-- ================= PROYECTOS (RESUMEN) ================= -->
+  <section id="proyectos" class="seccion seccion-alt">
+    <div class="contenedor">
+      <h2 class="titulo-seccion"><span class="texto-neon">&gt;_</span> Proyectos del equipo</h2>
+      <p class="subtitulo-seccion">Recién arrancamos: no hay proyectos en equipo todavía, y eso se dice claro.</p>
+      <div class="terminal reveal">
+        <div class="terminal-barra" aria-hidden="true"><span></span><span></span><span></span></div>
+        <p><span class="t-verde">$</span> <span class="t-cian">proyectos.listar</span> --equipo "REVELACIONES 27"</p>
+        <p class="t-gris">&gt; [ ] 0 procesos activos</p>
+        <p class="t-gris">&gt; buffer: vacio... el primer entregable se está incubando</p>
+        <p><span class="t-verde">&gt;</span> regla: se publica solo evidencia verificable</p>
+      </div>
+      <p class="centrar-link"><a class="enlace-neon" href="proyectos.html">&gt;&gt; Abrir el panel de proyectos</a></p>
+    </div>
+  </section>
+
+  <!-- ================= CIERRE EXCLUSIVO ================= -->
+  <section id="comunidad" class="seccion seccion-caja">
+    <div class="contenedor caja-final reveal">
+      <p class="caja-codigo">$ acceso.verificar --modo "exclusivo"</p>
+      <h2>Tecnología con propósito, entre iguales</h2>
+      <p>Un círculo cerrado de aprendizaje: sesiones guiadas, laboratorios y proyectos con evidencia real. El acceso se coordina de manera personal con los integrantes.</p>
+      <a href="comunidad.html" class="btn btn-primario btn-grande">✦ Descubre la comunidad</a>
+      <p class="caja-nota">>_< Sin atajos · Práctica activa · Respeto ante todo</p>
+    </div>
+  </section>
+
+  <!-- ================= PIE ================= -->
+  <footer class="pie">
+    <div class="contenedor pie-contenido">
+      <p class="pie-logo"><span class="logo-icono">◈</span> REVELACIONES <span class="texto-neon">27</span> · Orden <span class="texto-neon">TI</span></p>
+      <nav class="pie-nav">
+        <a href="index.html">Inicio</a>
+        <a href="areas.html">Áreas</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="comunidad.html">Comunidad</a>
+      </nav>
+      <p class="pie-frase">"La tecnología avanza y nosotros avanzamos con ella."</p>
+      <p class="pie-anio">© <span id="anio"></span> — ◈ REVELACIONES 27 · Orden TI</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

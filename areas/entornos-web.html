@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desarrollo de entornos web · Áreas · ◈ REVELACIONES 27 · Orden TI</title>
+  <meta name="description" content="Área 10: Desarrollo de entornos web en ◈ REVELACIONES 27 · Orden TI. HTML semántico, CSS responsivo y JavaScript real: esta web es la práctica del área." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>" />
+  <link rel="stylesheet" href="../css/estilos.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="contenedor barra">
+      <a href="../index.html" class="logo">
+        <span class="logo-icono">◈</span> REVELACIONES<span class="logo-apagado">27</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-enlaces" id="navEnlaces">
+        <a href="../index.html">Inicio</a>
+        <a href="../areas.html" class="activo">Áreas</a>
+        <a href="../proyectos.html">Proyectos</a>
+        <a href="../comunidad.html">Comunidad</a>
+      </nav>
+    </div>
+  </header>
+
+  <canvas id="red" class="fondo-particulas" aria-hidden="true"></canvas>
+
+  <section class="cabecera-pagina">
+    <div class="contenedor">
+      <p class="ruta">◈ REVELACIONES 27 &gt; Áreas &gt; <span class="texto-neon">10 · Desarrollo de entornos web</span></p>
+      <h1 class="titulo-seccion">Desarrollo de entornos <span class="texto-neon">web</span></h1>
+      <p class="subtitulo-seccion">Páginas que funcionan desde cero: estructura, estilo y comportamiento.</p>
+    </div>
+  </section>
+
+  <section class="seccion" style="padding-top: 0;">
+    <div class="contenedor cuerpo-area reveal">
+      <h2 class="titulo-seccion"><span class="texto-neon">&gt;_</span> En qué consiste</h2>
+      <p>La web es el medio donde más ideas se publican hoy. Esta área construye desde la base —HTML para la estructura, CSS para el estilo, JavaScript para el comportamiento— sin escalones mágicos: los frameworks llegan cuando se entiende el piso.</p>
+      <p>La prueba más directa está a la vista: esta misma web del grupo es práctica del área. Cada página que construyes se abre, se usa y se critica en el navegador, sin rodeos.</p>
+    </div>
+  </section>
+
+  <section class="seccion seccion-alt">
+    <div class="contenedor">
+      <h2 class="titulo-seccion"><span class="texto-neon">&gt;_</span> Lo que se estudia</h2>
+      <p class="subtitulo-seccion">Los puntos centrales del área en la ruta de la Orden.</p>
+      <ul class="lista-subtemas reveal">
+        <li>HTML semántico: estructura con significado, no divs a lo loco</li>
+        <li>Formularios y validación básica del lado del cliente</li>
+        <li>CSS: selectores, modelo de caja, colores y tipografía</li>
+        <li>Diseño responsivo: flex y grid con criterio</li>
+        <li>JavaScript: DOM, eventos y lógica que atiende al usuario</li>
+        <li>Accesibilidad y rendimiento: la web del grupo, navegable para todos</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <h2 class="titulo-seccion"><span class="texto-neon">&gt;_</span> Cómo la practicamos</h2>
+      <p class="subtitulo-seccion">Con el método de la Orden: nada se aprende solo leyendo.</p>
+      <div class="hitos reveal">
+        <div class="hito">
+          <h3>[01] Mini sitio personal</h3>
+          <p>Tu primer sitio con HTML y CSS: estructura limpia y estilo propio.</p>
+        </div>
+        <div class="hito">
+          <h3>[02] Interacción real</h3>
+          <p>Agregar JavaScript que haga algo útil: menú, formulario o búsqueda simple.</p>
+        </div>
+        <div class="hito">
+          <h3>[03] Proyecto guiado</h3>
+          <p>Evolucionar esta web del grupo: cada mejora se propone, se aprueba y se publica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion seccion-caja" style="padding-top: 0;">
+    <div class="contenedor">
+      <nav class="nav-area reveal">
+        <a href="herramientas-desarrollo.html">⟵ Herramientas de desarrollo</a>
+        <a href="../areas.html">Todas las áreas</a>
+        <a href="comportamiento-etico.html">Comportamiento ético ⟶</a>
+      </nav>
+    </div>
+  </section>
+
+  <footer class="pie">
+    <div class="contenedor pie-contenido">
+      <p class="pie-logo"><span class="logo-icono">◈</span> REVELACIONES <span class="texto-neon">27</span> · Orden <span class="texto-neon">TI</span></p>
+      <nav class="pie-nav">
+        <a href="../index.html">Inicio</a>
+        <a href="../areas.html">Áreas</a>
+        <a href="../proyectos.html">Proyectos</a>
+        <a href="../comunidad.html">Comunidad</a>
+      </nav>
+      <p class="pie-frase">"La tecnología avanza y nosotros avanzamos con ella."</p>
+      <p class="pie-anio">© <span id="anio"></span> — ◈ REVELACIONES 27 · Orden TI</p>
+    </div>
+  </footer>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>
